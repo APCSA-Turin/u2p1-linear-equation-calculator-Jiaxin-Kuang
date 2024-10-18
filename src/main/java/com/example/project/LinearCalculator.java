@@ -33,7 +33,6 @@ public class LinearCalculator{
     public void setX2(int newX){x2 = newX;}
     public void setY2(int newY){y2 = newY;}
 
-
     //distance() -> returns a double. 
     //calculates the distance between the two points to the nearest HUNDREDTH and returns the value.
     public double distance(){
@@ -42,6 +41,7 @@ public class LinearCalculator{
         double distance = roundedToHundredth(Math.sqrt(Math.pow(xDistance,2) + Math.pow(yDistance,2)));
         return distance; 
     }
+    
     //yInt() -> returns a double.
     //calculates the y intercept of the equation and returns the value to the nearest HUNDREDTH
     //if y-int if undefined, should return -999.99
@@ -86,7 +86,6 @@ public class LinearCalculator{
         }
         return "y=" + slope + "x" + "+" + yInt;
     }
-
 
     //roundedToHundredth(double x)-> returns double
     //calculates the input to the nearest hundredth and returns that value
